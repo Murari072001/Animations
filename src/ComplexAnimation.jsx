@@ -7,9 +7,9 @@ const ComplexAnimation = ({xVal,number,ind}) => {
   useEffect(() => {
     const tl = gsap.timeline();
 
-    const animation =tl.fromTo(boxRef.current,{x:1530,y:100},{y:320,rotation:-360,duration:0.3,ease:'none'})
-    .to(boxRef.current,{x:1460,y:410,rotation:-720,duration:0.1,ease:'none'})
-    .to(boxRef.current,{x:xVal,rotation:-1080,duration:0.4,ease:'none'})
+    const animation =tl.fromTo(boxRef.current,{x:1675,y:100},{y:400,rotation:-360,duration:0.3,ease:'none'})
+    .to(boxRef.current,{x:1620,y:460,rotation:-720,duration:0.05,ease:'none'})
+    .to(boxRef.current,{x:xVal,y:470,rotation:-1080,duration:0.4,ease:'none'})
    return ()=>{
     animation.kill()
    }
@@ -22,8 +22,8 @@ const ComplexAnimation = ({xVal,number,ind}) => {
       id='smallbox'
         ref={boxRef}
         style={{
-          width: '45px',
-          height: '45px',
+          width: '65px',
+          height: '65px',
           borderRadius:"50%"
         }}
       ></img>

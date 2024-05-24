@@ -68,7 +68,7 @@ const MainBoard = () => {
           return (
             <ComplexAnimation
               ind={ind}
-              xVal={280 + ind * 50}
+              xVal={120 + ind * 75}
               number={allImages[ele - 1]}
             ></ComplexAnimation>
           );
